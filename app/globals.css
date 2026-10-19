@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-dark: #0A1917;
+    --bg-dark-surface: #102623;
+    --bg-card: #15322E;
+    --border-dark: #1E443E;
+    --gold-primary: #C5A467;
+    --gold-hover: #D8B77B;
+    --gold-dark: #9F7E44;
+  }
+
+  body {
+    background-color: #0A1917;
+    color: #F3EFE6;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, serif;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Custom Utilities for Luxury Dark Teal & Gold Theme */
+.text-gold {
+  color: #C5A467;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E5C78B 0%, #C5A467 50%, #9C7D43 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.border-gold {
+  border-color: rgba(197, 164, 103, 0.3);
+}
+
+.bg-teal-gradient {
+  background: radial-gradient(circle at top right, #163630 0%, #0B1917 70%);
+}
+
+.bg-subtle-glow {
+  background: radial-gradient(circle at center, rgba(197, 164, 103, 0.08) 0%, transparent 70%);
+}
+
+.glass-dark {
+  background: rgba(16, 38, 35, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(197, 164, 103, 0.15);
+}
+
+.glass-dark-card {
+  background: rgba(21, 50, 46, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 164, 103, 0.18);
+}
+
+/* Watermark styles */
+.watermark-text {
+  font-family: 'Playfair Display', serif;
+  user-select: none;
+  pointer-events: none;
+}
